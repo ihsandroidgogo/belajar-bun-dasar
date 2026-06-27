@@ -1,0 +1,16 @@
+{
+  "name": "belajar-bun-dasar",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "react": "^19.2.7"
+  }
+}
