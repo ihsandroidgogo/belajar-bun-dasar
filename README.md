@@ -118,6 +118,13 @@ bun pm ls
 ```
 Harus nya sub-package ada di dalam node_modules
 
+Bunfig
+Secara umum Bun bisa diatur menggunakan Configuration File dengan nama bunfig.toml
+
+Sebenarnya bisa dilakukan di package.json atau tsconfig.json
+
+Namun jika perlu mengubah aturan konfigurasi khusus untuk bun kita bisa lakukan di file bunfig.toml
+
 
 
 

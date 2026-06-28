@@ -1,0 +1,5 @@
+loglevel = "debug"
+
+[test]
+root = './test'
+coverage = true
