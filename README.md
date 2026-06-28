@@ -131,7 +131,72 @@ Karena Bun berjalan di server bukan di web browser beberapppa Web API tidak rele
 Cek beberapa Web API yang di dukung oleh Bun:
 [https://bun.com/docs/runtime/web-apis]
 
+HTTP Servers
+
+Gunakan Bun.serve untuk HTTP Server nya
+
+```bash
+bun run server.ts
+```
+
+Buka http://localhost:3000/ untuk mengecek hasil nya, bisa ubah query params name jadi Mona sehingga menjadi http://localhost:3000/?nama=Mona
+
+Docs : [https://bun.com/docs/runtime/http/server]
 
 
+File IO
 
+Bisa coba untuk reading file dengan [Bun.file(path): BunFile] bisa dicoba ketika menulis [Bun.write] file nya nanti muncul.
 
+Docs : [https://bun.com/docs/runtime/file-io]
+
+Hashing 
+
+Contohnya bun menyediakan algoritma bcrypt, yang banyak digunakan untuk melakukan hashing password.
+
+Docs : [https://bun.com/docs/runtime/hashing#hashing]
+
+Semantic Version
+
+Give a version number MAJOR, MINOR, PATCH, fungsi nya untuk mencocokan versi.
+
+Docs : [https://bun.com/docs/runtime/semver]
+
+Utilities
+
+Selama menggunakan library Bun, kita selalu menggunakan global variable bun
+
+banyak sekali attribute yang terdapat di global variable Bun
+
+Docs : [https://bun.com/docs/runtime/utils]
+
+Bun Ecosystem
+
+Untuk ecosystem nya tidak sebanyak Node JS, tetapi Bun sejak awal memang ingin kompatibel dengan Node JS, Sehingga banyak Library dan Package yang dibuat di Node JS bisa dipakai di Bun juga.
+
+Biasa nya menggunakan library :
+- Winston (untuk Logging)
+- Express (untuk Web)
+- Zod (untuk validation)
+- Prisma ORM (untuk koneksi ke database)
+```
+
+Winston 
+```bash
+bun add winston
+```
+
+Express JS
+Untuk menambahkan library Express JS
+```bash
+bun add express
+bun add @types/express --dev
+```
+
+Zod
+Validation library paling populer di Typescript
+```bash
+bun add zod
+```
+
+Docs: [https://zod.dev/]
