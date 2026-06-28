@@ -200,3 +200,51 @@ bun add zod
 ```
 
 Docs: [https://zod.dev/]
+
+Prisma ORM
+Prisma adalah ORM (Object-Relational Mapper) modern untuk Node.js dan TypeScript yang mempermudah interaksi dengan database, untuk default nya dia Postgre tetapi bisa diganti ke MySQL.
+
+Install :
+```bash
+bun add prisma --dev
+```
+
+Inisialisasi Konfigurasi Prisma ORM :
+```bash
+bunx prisma init --database-provider mysql
+```
+
+atau bisa juga pakai :
+```bash
+bunx prisma init --datasource-provider mysql
+```
+
+Lalu bisa cek di .env untuk datasource baru URL, nanti bisa diganti sesuai dengan PC/Laptop kalian sesuai data yang ada.
+
+Buat Konfigurasi di .env (database baru tanpa password) : 
+```bash
+DATABASE_URL="mysql://root:@localhost:3306/belajar_bun_dasar"
+```
+
+Lalu bisa buat database nya :
+```bash
+create database belajar_bun_dasar;
+use belajar_bun_dasar;
+show tables;
+```
+
+Kode Prisma Schema :
+```
+model Contact {
+  id    Int     @id @default(autoincrement())
+  name  String  @db.VarChar(100)
+  phone String? @db.VarChar(20)
+  email String? @db.VarChar(100)
+    
+  @@map("contacts")
+}
+```
+
+// @@map itu nanti jadi nama table nya
+
+Docs : [https://www.prisma.io/]
