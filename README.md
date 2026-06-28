@@ -125,6 +125,12 @@ Sebenarnya bisa dilakukan di package.json atau tsconfig.json
 
 Namun jika perlu mengubah aturan konfigurasi khusus untuk bun kita bisa lakukan di file bunfig.toml
 
+Web API
+Karena Bun berjalan di server bukan di web browser beberapppa Web API tidak relevan untuk bunm, tetapi Bun mendukung sebagian fitur yang terdapat di Web API.
+
+Cek beberapa Web API yang di dukung oleh Bun:
+[https://bun.com/docs/runtime/web-apis]
+
 
 
 
