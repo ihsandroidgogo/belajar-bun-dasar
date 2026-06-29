@@ -263,9 +263,5 @@ bunx prisma generate
 Generate Prisma Client
 Ini wajib dilakukan setiap kali kamu mengubah schema.prisma.
 
-Jika error bisa coba :
-```
-
-```
 
 Docs : [https://www.prisma.io/]
