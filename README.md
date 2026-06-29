@@ -207,6 +207,7 @@ Prisma adalah ORM (Object-Relational Mapper) modern untuk Node.js dan TypeScript
 Install :
 ```bash
 bun add prisma --dev
+bun add prisma @prisma/client
 ```
 
 Inisialisasi Konfigurasi Prisma ORM :
@@ -244,7 +245,26 @@ model Contact {
   @@map("contacts")
 }
 ```
-
 // @@map itu nanti jadi nama table nya
+
+Setelah selesai membuat prisma schema, kita bisa menjalakan database migration menggunakan perintah : 
+
+```bash
+bunx prisma migrate dev
+```
+Lalu tinggal kasih nama untuk migrate nya, Setelah sudah bisa cek dengan show tables; lalu desc contacts;
+
+Selanjutnya bisa membuat kode Prisma Client secara otomatis menggunakan perintah :
+
+```bash
+bunx prisma generate
+```
+Generate Prisma Client
+Ini wajib dilakukan setiap kali kamu mengubah schema.prisma.
+
+Jika error bisa coba :
+```
+
+```
 
 Docs : [https://www.prisma.io/]

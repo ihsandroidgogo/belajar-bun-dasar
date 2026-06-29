@@ -5,6 +5,7 @@
 
 generator client {
   provider = "prisma-client"
+  binaryTargets = ["native", "windows"]
   output   = "../src/generated/prisma"
 }
 
