@@ -208,6 +208,7 @@ Install :
 ```bash
 bun add prisma --dev
 bun add prisma @prisma/client
+bun add @prisma/adapter-mariadb
 ```
 
 Inisialisasi Konfigurasi Prisma ORM :
