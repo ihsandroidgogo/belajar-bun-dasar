@@ -263,5 +263,8 @@ bunx prisma generate
 Generate Prisma Client
 Ini wajib dilakukan setiap kali kamu mengubah schema.prisma.
 
+Jika ada error di Prisma-Client nya bisa coba solusi ini :
+https://github.com/prisma/prisma/discussions/13458#discussioncomment-13480644
+
 
 Docs : [https://www.prisma.io/]

@@ -2,9 +2,11 @@
   "name": "belajar-bun-dasar",
   "module": "index.ts",
   "type": "module",
+  
   "workspaces": [
     "packages/*"
   ],
+  "trustedDependencies": ["@prisma/client", "prisma"],
   "private": true,
   "devDependencies": {
     "@types/bun": "^1.3.14",
