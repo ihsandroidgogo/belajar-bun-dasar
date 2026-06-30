@@ -266,5 +266,9 @@ Ini wajib dilakukan setiap kali kamu mengubah schema.prisma.
 Jika ada error di Prisma-Client nya bisa coba solusi ini :
 https://github.com/prisma/prisma/discussions/13458#discussioncomment-13480644
 
+Jika ada error lagi bisa cek install 
+```
+bun add @prisma/client-runtime-utils
+```
 
 Docs : [https://www.prisma.io/]
