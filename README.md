@@ -270,5 +270,10 @@ Jika ada error lagi bisa cek install
 ```
 bun add @prisma/client-runtime-utils
 ```
+Jika sudah coba :
+```
+bun run prisma.ts
+```
+
 
 Docs : [https://www.prisma.io/]
