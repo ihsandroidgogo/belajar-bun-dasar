@@ -274,6 +274,6 @@ Jika sudah coba :
 ```
 bun run prisma.ts
 ```
-
+Biasa nya akan muncul hasil nya di terminal, jika pakai xampp mungkin ada hal yang tidak kompatibel tetapi data tetap masuk.
 
 Docs : [https://www.prisma.io/]
